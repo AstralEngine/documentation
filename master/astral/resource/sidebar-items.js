@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["ErrorKind","A list specifying general categories of resource error."],["State","The current state of a resource"]],"mod":[["assets","Functionality to manage asset data."]],"struct":[["Declaration",""],["Loader",""],["ResourceId",""]],"trait":[["LoadData",""],["Resource",""]],"type":[["Error",""],["LoadPriority",""],["Result",""]]});

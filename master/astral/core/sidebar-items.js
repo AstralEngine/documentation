@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["collections","Collection types."],["error","Traits and structures for working with Errors in the Astral Engine."],["hash","Hashing utilities and hashers."],["log","Structures and macros for logging."],["math","Traits, structures and functions for mathematical and numeric problems."],["string","Structures for holding strings."]]});
