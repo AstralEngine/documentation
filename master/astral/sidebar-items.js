@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["core","Low-level support systems for manage mundane but crucial tasks."],["resource","Support systems for creating and loading different resources."]]});
