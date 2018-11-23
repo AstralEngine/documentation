@@ -1,153 +1,27 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="API documentation for the Rust `num` mod in crate `astral`."><meta name="keywords" content="rust, rustlang, rust-lang, num"><title>astral::core::math::num - Rust</title><link rel="stylesheet" type="text/css" href="../../../../normalize.css"><link rel="stylesheet" type="text/css" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../../../dark.css"><link rel="stylesheet" type="text/css" href="../../../../light.css" id="themeStyle"><script src="../../../../storage.js"></script><link rel="shortcut icon" href="https://astral-engine.github.io/docs/logo.svg"></head><body class="rustdoc mod"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../../../../astral/index.html'><img src='https://astral-engine.github.io/docs/logo_astral.svg' alt='logo' width='100'></a><p class='location'>Module num</p><div class="sidebar-elems"><div class="block items"><ul><li><a href="#traits">Traits</a></li></ul></div><p class='location'><a href='../../../index.html'>astral</a>::<wbr><a href='../../index.html'>core</a>::<wbr><a href='../index.html'>math</a></p><script>window.sidebarCurrent = {name: 'num', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script></div></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../../../../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../../../../theme.js"></script><nav class="sub"><form class="search-form js-only"><div class="search-container"><input class="search-input" name="search" autocomplete="off" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><a id="settings-menu" href="../../../../settings.html"><img src="../../../../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><h1 class='fqn'><span class='out-of-band'><span id='render-detail'><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class='inner'>&#x2212;</span>]</a></span></span><span class='in-band'>Module <a href='../../../index.html'>astral</a>::<wbr><a href='../../index.html'>core</a>::<wbr><a href='../index.html'>math</a>::<wbr><a class="mod" href=''>num</a></span></h1><div class='docblock'><p>Additional functionality for numerics.</p>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="API documentation for the Rust `num` mod in crate `astral`."><meta name="keywords" content="rust, rustlang, rust-lang, num"><title>astral::core::math::num - Rust</title><link rel="stylesheet" type="text/css" href="../../../../normalize.css"><link rel="stylesheet" type="text/css" href="../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../../../dark.css"><link rel="stylesheet" type="text/css" href="../../../../light.css" id="themeStyle"><script src="../../../../storage.js"></script><link rel="shortcut icon" href="https://astral-engine.github.io/docs/logo.svg"></head><body class="rustdoc mod"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../../../../astral/index.html'><img src='https://astral-engine.github.io/docs/logo_astral.svg' alt='logo' width='100'></a><p class='location'>Module num</p><div class="sidebar-elems"><div class="block items"><ul><li><a href="#traits">Traits</a></li></ul></div><p class='location'><a href='../../../index.html'>astral</a>::<wbr><a href='../../index.html'>core</a>::<wbr><a href='../index.html'>math</a></p><script>window.sidebarCurrent = {name: 'num', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script></div></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../../../../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../../../../theme.js"></script><nav class="sub"><form class="search-form js-only"><div class="search-container"><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><a id="settings-menu" href="../../../../settings.html"><img src="../../../../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><h1 class='fqn'><span class='out-of-band'><span id='render-detail'><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class='inner'>&#x2212;</span>]</a></span></span><span class='in-band'>Module <a href='../../../index.html'>astral</a>::<wbr><a href='../../index.html'>core</a>::<wbr><a href='../index.html'>math</a>::<wbr><a class="mod" href=''>num</a></span></h1><div class='docblock'><p>Additional functionality for numerics.</p>
 <p>This module provides traits that are useful when doing numerical work.
 See the individual documentation for each piece for more information.</p>
 </div><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
-<table>
-                       <tr class=' module-item'>
-                           <td><a class="trait" href="trait.AsPrimitive.html"
-                                  title='trait astral::core::math::num::AsPrimitive'>AsPrimitive</a></td>
-                           <td class='docblock-short'>
-                                <p>A generic interface for casting between machine scalars with the
+<table><tr class='module-item'><td><a class="trait" href="trait.AsPrimitive.html" title='astral::core::math::num::AsPrimitive trait'>AsPrimitive</a></td><td class='docblock-short'><p>A generic interface for casting between machine scalars with the
 <code>as</code> operator, which admits narrowing and precision loss.
 Implementers of this trait AsPrimitive should behave like a primitive
 numeric type (e.g. a newtype around another primitive), and the
 intended conversion must never fail.</p>
-
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class="trait" href="trait.Bounded.html"
-                                  title='trait astral::core::math::num::Bounded'>Bounded</a></td>
-                           <td class='docblock-short'>
-                                <p>Numbers which have upper and lower bounds</p>
-
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class="trait" href="trait.NonZero.html"
-                                  title='trait astral::core::math::num::NonZero'>NonZero</a></td>
-                           <td class='docblock-short'>
-                                <p>Functions for primitive type, which has a non-zero correspondant.</p>
-
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class="trait" href="trait.Num.html"
-                                  title='trait astral::core::math::num::Num'>Num</a></td>
-                           <td class='docblock-short'>
-                                <p>The base trait for numeric types, covering <code>0</code> and <code>1</code> values,
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Bounded.html" title='astral::core::math::num::Bounded trait'>Bounded</a></td><td class='docblock-short'><p>Numbers which have upper and lower bounds</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.NonZero.html" title='astral::core::math::num::NonZero trait'>NonZero</a></td><td class='docblock-short'><p>Functions for primitive type, which has a non-zero correspondant.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Num.html" title='astral::core::math::num::Num trait'>Num</a></td><td class='docblock-short'><p>The base trait for numeric types, covering <code>0</code> and <code>1</code> values,
 comparisons, basic numeric operations, and string conversion.</p>
-
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class="trait" href="trait.NumCast.html"
-                                  title='trait astral::core::math::num::NumCast'>NumCast</a></td>
-                           <td class='docblock-short'>
-                                <p>An interface for casting between machine scalars.</p>
-
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class="trait" href="trait.NumOps.html"
-                                  title='trait astral::core::math::num::NumOps'>NumOps</a></td>
-                           <td class='docblock-short'>
-                                <p>The trait for types implementing basic numeric operations</p>
-
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class="trait" href="trait.One.html"
-                                  title='trait astral::core::math::num::One'>One</a></td>
-                           <td class='docblock-short'>
-                                <p>Defines a multiplicative identity element for <code>Self</code>.</p>
-
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class="trait" href="trait.PrimInt.html"
-                                  title='trait astral::core::math::num::PrimInt'>PrimInt</a></td>
-                           <td class='docblock-short'>
-                                
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class="trait" href="trait.PrimUnsignedInt.html"
-                                  title='trait astral::core::math::num::PrimUnsignedInt'>PrimUnsignedInt</a></td>
-                           <td class='docblock-short'>
-                                <p>Functions for primitive unsigned integral types.</p>
-
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class="trait" href="trait.Saturating.html"
-                                  title='trait astral::core::math::num::Saturating'>Saturating</a></td>
-                           <td class='docblock-short'>
-                                <p>Saturating math operations</p>
-
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class="trait" href="trait.Signed.html"
-                                  title='trait astral::core::math::num::Signed'>Signed</a></td>
-                           <td class='docblock-short'>
-                                <p>Useful functions for signed numbers (i.e. numbers that can be negative).</p>
-
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class="trait" href="trait.Unsigned.html"
-                                  title='trait astral::core::math::num::Unsigned'>Unsigned</a></td>
-                           <td class='docblock-short'>
-                                <p>A trait for values which cannot be negative</p>
-
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class="trait" href="trait.WrappingAdd.html"
-                                  title='trait astral::core::math::num::WrappingAdd'>WrappingAdd</a></td>
-                           <td class='docblock-short'>
-                                <p>Performs addition that wraps around on overflow.</p>
-
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class="trait" href="trait.WrappingMul.html"
-                                  title='trait astral::core::math::num::WrappingMul'>WrappingMul</a></td>
-                           <td class='docblock-short'>
-                                <p>Performs multiplication that wraps around on overflow.</p>
-
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class="trait" href="trait.WrappingShl.html"
-                                  title='trait astral::core::math::num::WrappingShl'>WrappingShl</a></td>
-                           <td class='docblock-short'>
-                                <p>Performs a left shift that does not panic.</p>
-
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class="trait" href="trait.WrappingShr.html"
-                                  title='trait astral::core::math::num::WrappingShr'>WrappingShr</a></td>
-                           <td class='docblock-short'>
-                                <p>Performs a right shift that does not panic.</p>
-
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class="trait" href="trait.WrappingSub.html"
-                                  title='trait astral::core::math::num::WrappingSub'>WrappingSub</a></td>
-                           <td class='docblock-short'>
-                                <p>Performs subtraction that wraps around on overflow.</p>
-
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class="trait" href="trait.Zero.html"
-                                  title='trait astral::core::math::num::Zero'>Zero</a></td>
-                           <td class='docblock-short'>
-                                <p>Defines an additive identity element for <code>Self</code>.</p>
-
-                           </td>
-                       </tr></table></section><section id="search" class="content hidden"></section><section class="footer"></section><aside id="help" class="hidden"><div><h1 class="hidden">Help</h1><div class="shortcuts"><h2>Keyboard Shortcuts</h2><dl><dt><kbd>?</kbd></dt><dd>Show this help dialog</dd><dt><kbd>S</kbd></dt><dd>Focus the search field</dd><dt><kbd>↑</kbd></dt><dd>Move up in search results</dd><dt><kbd>↓</kbd></dt><dd>Move down in search results</dd><dt><kbd>↹</kbd></dt><dd>Switch tab</dd><dt><kbd>&#9166;</kbd></dt><dd>Go to active search result</dd><dt><kbd>+</kbd></dt><dd>Expand all sections</dd><dt><kbd>-</kbd></dt><dd>Collapse all sections</dd></dl></div><div class="infos"><h2>Search Tricks</h2><p>Prefix searches with a type followed by a colon (e.g. <code>fn:</code>) to restrict the search to a given type.</p><p>Accepted types are: <code>fn</code>, <code>mod</code>, <code>struct</code>, <code>enum</code>, <code>trait</code>, <code>type</code>, <code>macro</code>, and <code>const</code>.</p><p>Search functions by type signature (e.g. <code>vec -> usize</code> or <code>* -> vec</code>)</p><p>Search multiple things at once by splitting your query with comma (e.g. <code>str,u8</code> or <code>String,struct:Vec,test</code>)</p></div></div></aside><script>window.rootPath = "../../../../";window.currentCrate = "astral";</script><script src="../../../../aliases.js"></script><script src="../../../../main.js"></script><script defer src="../../../../search-index.js"></script></body></html>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.NumCast.html" title='astral::core::math::num::NumCast trait'>NumCast</a></td><td class='docblock-short'><p>An interface for casting between machine scalars.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.NumOps.html" title='astral::core::math::num::NumOps trait'>NumOps</a></td><td class='docblock-short'><p>The trait for types implementing basic numeric operations</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.One.html" title='astral::core::math::num::One trait'>One</a></td><td class='docblock-short'><p>Defines a multiplicative identity element for <code>Self</code>.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.PrimInt.html" title='astral::core::math::num::PrimInt trait'>PrimInt</a></td><td class='docblock-short'></td></tr><tr class='module-item'><td><a class="trait" href="trait.PrimUnsignedInt.html" title='astral::core::math::num::PrimUnsignedInt trait'>PrimUnsignedInt</a></td><td class='docblock-short'><p>Functions for primitive unsigned integral types.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Saturating.html" title='astral::core::math::num::Saturating trait'>Saturating</a></td><td class='docblock-short'><p>Saturating math operations</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Signed.html" title='astral::core::math::num::Signed trait'>Signed</a></td><td class='docblock-short'><p>Useful functions for signed numbers (i.e. numbers that can be negative).</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Unsigned.html" title='astral::core::math::num::Unsigned trait'>Unsigned</a></td><td class='docblock-short'><p>A trait for values which cannot be negative</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.WrappingAdd.html" title='astral::core::math::num::WrappingAdd trait'>WrappingAdd</a></td><td class='docblock-short'><p>Performs addition that wraps around on overflow.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.WrappingMul.html" title='astral::core::math::num::WrappingMul trait'>WrappingMul</a></td><td class='docblock-short'><p>Performs multiplication that wraps around on overflow.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.WrappingShl.html" title='astral::core::math::num::WrappingShl trait'>WrappingShl</a></td><td class='docblock-short'><p>Performs a left shift that does not panic.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.WrappingShr.html" title='astral::core::math::num::WrappingShr trait'>WrappingShr</a></td><td class='docblock-short'><p>Performs a right shift that does not panic.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.WrappingSub.html" title='astral::core::math::num::WrappingSub trait'>WrappingSub</a></td><td class='docblock-short'><p>Performs subtraction that wraps around on overflow.</p>
+</td></tr><tr class='module-item'><td><a class="trait" href="trait.Zero.html" title='astral::core::math::num::Zero trait'>Zero</a></td><td class='docblock-short'><p>Defines an additive identity element for <code>Self</code>.</p>
+</td></tr></table></section><section id="search" class="content hidden"></section><section class="footer"></section><aside id="help" class="hidden"><div><h1 class="hidden">Help</h1><div class="shortcuts"><h2>Keyboard Shortcuts</h2><dl><dt><kbd>?</kbd></dt><dd>Show this help dialog</dd><dt><kbd>S</kbd></dt><dd>Focus the search field</dd><dt><kbd>↑</kbd></dt><dd>Move up in search results</dd><dt><kbd>↓</kbd></dt><dd>Move down in search results</dd><dt><kbd>↹</kbd></dt><dd>Switch tab</dd><dt><kbd>&#9166;</kbd></dt><dd>Go to active search result</dd><dt><kbd>+</kbd></dt><dd>Expand all sections</dd><dt><kbd>-</kbd></dt><dd>Collapse all sections</dd></dl></div><div class="infos"><h2>Search Tricks</h2><p>Prefix searches with a type followed by a colon (e.g. <code>fn:</code>) to restrict the search to a given type.</p><p>Accepted types are: <code>fn</code>, <code>mod</code>, <code>struct</code>, <code>enum</code>, <code>trait</code>, <code>type</code>, <code>macro</code>, and <code>const</code>.</p><p>Search functions by type signature (e.g. <code>vec -> usize</code> or <code>* -> vec</code>)</p><p>Search multiple things at once by splitting your query with comma (e.g. <code>str,u8</code> or <code>String,struct:Vec,test</code>)</p></div></div></aside><script>window.rootPath = "../../../../";window.currentCrate = "astral";</script><script src="../../../../aliases.js"></script><script src="../../../../main.js"></script><script defer src="../../../../search-index.js"></script></body></html>
