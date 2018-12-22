@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["core","Low-level support systems for manage mundane but crucial tasks."],["resource","Support systems for creating and loading different resources."]]});
+initSidebarItems({"mod":[["core","Low level support for mundane but crucial tasks."],["resource","Resource creating and loading."],["third_party","Facade for third party libraries."],["video","Data oriented rendering engine."]],"struct":[["Engine","The main object for handling systems in the Astral Engine."]]});
