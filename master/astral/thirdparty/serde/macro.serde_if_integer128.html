@@ -11,11 +11,8 @@ this macro.</p>
 do not need to bother with this macro and may assume support for 128-bit
 integers.</p>
 
-<div class="example-wrap"><pre class="rust rust-example-rendered">
-<span class="attribute">#[<span class="ident">macro_use</span>]</span>
-<span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">serde</span>;
-
-<span class="kw">use</span> <span class="ident">serde</span>::<span class="ident">Serializer</span>;
+<div class='information'><div class='tooltip edition'>ⓘ<span class='tooltiptext'>This code runs with edition 2018</span></div></div><div class="example-wrap"><pre class="rust rust-example-rendered edition ">
+<span class="kw">use</span> <span class="ident">serde</span>::{<span class="ident">serde_if_integer128</span>, <span class="ident">Serializer</span>};
 
 <span class="kw">impl</span> <span class="ident">Serializer</span> <span class="kw">for</span> <span class="ident">MySerializer</span> {
     <span class="kw">type</span> <span class="prelude-val">Ok</span> <span class="op">=</span> ();
@@ -40,7 +37,7 @@ integers.</p>
 <p>When Serde is built with support for 128-bit integers, this macro expands
 transparently into just the input tokens.</p>
 
-<div class="example-wrap"><pre class="rust rust-example-rendered">
+<div class='information'><div class='tooltip edition'>ⓘ<span class='tooltiptext'>This code runs with edition 2018</span></div></div><div class="example-wrap"><pre class="rust rust-example-rendered edition ">
 <span class="macro">macro_rules</span><span class="macro">!</span> <span class="ident">serde_if_integer128</span> {
     ($(<span class="macro-nonterminal">$</span><span class="macro-nonterminal">tt</span>:<span class="ident">tt</span>)<span class="kw-2">*</span>) <span class="op">=&gt;</span> {
         $(<span class="macro-nonterminal">$</span><span class="macro-nonterminal">tt</span>)<span class="op">*</span>
@@ -49,7 +46,7 @@ transparently into just the input tokens.</p>
 <p>When built without support for 128-bit integers, this macro expands to
 nothing.</p>
 
-<div class="example-wrap"><pre class="rust rust-example-rendered">
+<div class='information'><div class='tooltip edition'>ⓘ<span class='tooltiptext'>This code runs with edition 2018</span></div></div><div class="example-wrap"><pre class="rust rust-example-rendered edition ">
 <span class="macro">macro_rules</span><span class="macro">!</span> <span class="ident">serde_if_integer128</span> {
     ($(<span class="macro-nonterminal">$</span><span class="macro-nonterminal">tt</span>:<span class="ident">tt</span>)<span class="kw-2">*</span>) <span class="op">=&gt;</span> {};
 }</pre></div>
