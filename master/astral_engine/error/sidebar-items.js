@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Error","The generic error type for the Astral engine."]],"trait":[["OptionExt","Extension methods for [`Option`]."],["ResultExt","Extension methods for [`Result`]."]],"type":[["Result","A specialized [`Result`] type in the Astral Engine."]]});
