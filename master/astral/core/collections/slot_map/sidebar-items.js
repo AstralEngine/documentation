@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["Key","Used to access stored values in a slot map."],["SparseSlotMap","A storage with stable unique keys."]]});
